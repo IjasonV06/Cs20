@@ -1,0 +1,12 @@
+###Basic Lists
+breakfast_items = ["pancakes","bacon","coffee","sausage","smoothie"] 
+
+print(breakfast_items)
+
+print(breakfast_items[0]) #print pancakes
+print(breakfast_items[-3])#Print coffee
+print(breakfast_items[1]) #Print bacon
+
+#Loop through list an print each item
+for x in (breakfast_items):
+    print(x)
