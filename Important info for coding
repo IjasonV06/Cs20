@@ -1,0 +1,28 @@
+#get info from user using keyboard 
+inputWord = input("Give me a word:")
+print(inputWord)
+
+
+#F String formatting
+print(f"My {inputWord} jumped over the moon") 
+#Hard way
+print("My " + inputWord + " jumped over the moon") 
+
+
+#Lists
+pets = []
+inputPet = input("Name a pet:")
+print(pets)
+pets.append(inputPet)
+print(pets)
+
+
+#Looping lists
+fruit = ["Bananas", "Apples", "Strawberries"]
+
+for x in fruit:
+    print(f"I like to eat {x}")
+
+
+for x in range(len(fruit)):
+    print(f"I like to eat {fruit[x]}")
