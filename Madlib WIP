@@ -1,0 +1,13 @@
+inputword = input("Welcome to Jason's madlib, Press enter to start!")
+
+print(inputword)
+
+adjective = input("enter an adjective:)
+
+nationality = input("enter a nationality:)
+
+name = input("enter a random name:)
+
+noun = input("enter a noun:)
+
+https://www.pinterest.com/pin/114490015510328160/
