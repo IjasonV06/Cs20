@@ -1,0 +1,17 @@
+import turtle as t
+
+cheddar = t.Turtle()
+
+#For loop, use variables and create a function 
+
+# cheddar.dot(130, "black")
+# cheddar.dot(110, "white")
+# cheddar.dot(90, "black")
+# cheddar.dot(70, "white")
+# cheddar.dot(50, "red")
+
+
+def createTarget(ring_count):
+    ring_count = ["1", "2", "3"]
+    for x in ring_count:
+        print(cheddar.dot(130, "black" ))
