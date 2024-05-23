@@ -1,0 +1,45 @@
+import pygame
+from pygame.locals import * #imports global variables
+
+def draw_block():
+    surface.fill((46, 196, 29))
+    surface.blit(block, (block_x, block_y))
+    pygame.display.flip()
+    
+#initializing the use of pygame
+if __name__ == "__main__":
+    pygame.init()
+#The display screen/colour    
+    surface = pygame.display.set_mode((1000,1000))
+    surface.fill((46,196,29))
+#image for snake
+    block = pygame.image.load("C:/Users/jav9591/Downloads/resources for snake/block.jpg").convert()
+    block_x = 100
+    block_y = 100
+    surface.blit(block,(block_x,block_y))
+    
+    pygame.display.flip()
+#Event loop
+running = True 
+    
+while running:
+    for event in pygame.event.get(): #event = keyboard,mouse etc.
+        if event.type == KEYDOWN:
+            if event.key == K_ESCAPE:
+                running = False
+                
+            if event.key == K_UP:
+                block_y -= 10
+                draw_block()
+            if event.key == K_DOWN:
+                block_y += 10
+                draw_block()
+            if event.key == K_LEFT:
+                block_x -= 10
+                draw_block()
+            if event.key == K_RIGHT:
+                block_x += 10
+                draw_block()
+                
+        elif event.type == QUIT:
+                running = False #Running is true at all times, until the Quit event.
